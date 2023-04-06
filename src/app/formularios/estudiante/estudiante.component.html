@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit()" [formGroup]="registerForm" class="row g-3">
   <div class="row g-3">
     <div class="col">
-      <label for="nombre" class="form-label">Nombre</label>
+      <label for="nombre" class="form-label">Nombres</label>
       <input [formControl]="nombreControl" type="text"
         [ngClass]="{'is-invalid': nombreControl.invalid && nombreControl.touched}" class="form-control"
         placeholder="Nombre" aria-label="Nombre">
@@ -9,7 +9,7 @@
       <div *ngIf="nombreControl.hasError('required') && nombreControl.touched" class="invalid-feedback">Requerido</div>
     </div>
     <div class="col">
-      <label for="apellido" class="form-label">Apellido</label>
+      <label for="apellido" class="form-label">Apellidos</label>
       <input [formControl]="apellidoControl" type="text"
         [ngClass]="{'is-invalid': apellidoControl.invalid && apellidoControl.touched}" class="form-control"
         placeholder="Apellido" aria-label="Apellido">
@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="col-md-6">
-    <label for="inputEmail" class="form-label">Email</label>
+    <label for="inputEmail" class="form-label">email</label>
     <input [formControl]="emailControl" type="email" class="form-control"
       [ngClass]="{'is-invalid': emailControl.invalid && emailControl.touched}" id="inputEmail"
       placeholder="user@mail.com">
@@ -39,7 +39,7 @@
   </div>
 
   <div class="col-md-6">
-    <label for="inputPassword" class="form-label">Password</label>
+    <label for="inputPassword" class="form-label">Contraseña</label>
     <input [formControl]="passwordControl" type="password"
       [ngClass]="{'is-invalid': passwordControl.invalid && passwordControl.touched}" class="form-control"
       id="inputPassword">
@@ -48,7 +48,7 @@
   </div>
 
   <div class="col-md-6">
-    <label for="reinputPassword" class="form-label">Re-Password</label>
+    <label for="reinputPassword" class="form-label">Ingresar contraseña</label>
     <input [formControl]="repasswordControl" type="password"
       [ngClass]="{'is-invalid': repasswordControl.invalid && repasswordControl.touched}" class="form-control"
       class="form-control" id="reinputPassword">
@@ -64,7 +64,7 @@
     </div>
   </div>
   <div class="col-12">
-    <label for="inputAddress2" class="form-label">Dirección 2</label>
+    <label for="inputAddress2" class="form-label">MZ - Villa - número</label>
     <input [formControl]="direccion2Control" type="text" class="form-control" class="form-control" id="inputAddress2"
       placeholder="Apartment, studio, or floor">
   </div>
@@ -86,7 +86,7 @@
     </div>
   </div>
   <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
+    <label for="inputZip" class="form-label">código postal</label>
     <input [formControl]="zipControl" type="text" class="form-control" id="inputZip">
   </div>
   <div class="col-12">
@@ -98,6 +98,6 @@
     </div>
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-primary">Registrar</button>
   </div>
 </form>
